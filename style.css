@@ -1,12 +1,12 @@
 .container{
-    margin: 30px;
+    margin: 30px 0px;
     /* display: flex;
     flex-direction: column;
     align-items: center; */
 }
 
 .my-Input{
-    width: 100%;
+    width: 90%;
     max-width: 400px; /* Adjust as needed */
     padding: 10px 15px;
     border: 2px solid #3498db; /* Soft blue border */
@@ -144,9 +144,7 @@
 #result {
     padding: 15px; /* Increased padding for better touch interaction */
     font-size: 16px; /* Base font size */
-    border: 2px solid #3498db; /* Soft blue border */
     border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light grey background */
     max-width: 100%; /* Ensure text block doesn't exceed container width */
     word-wrap: break-word; /* Handle long words */
     text-align: left; /* Align text to the left */
@@ -233,7 +231,7 @@ a {
 }
 
 /* Responsive design adjustments */
-@media (min-width: 600px) {
+@media (min-width: 400px) {
     .copy-container {
         flex-direction: row; /* Align items horizontally on larger screens */
         align-items: center;
@@ -249,6 +247,12 @@ a {
     .footer-text {
         font-size: 24px; /* Smaller font size on smaller screens */
     }
+
+    .beautiful-anchor, .footer-text{
+        font-size: 18px;
+    }
+
+
 }
 
 
