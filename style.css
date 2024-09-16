@@ -1,0 +1,199 @@
+.container{
+    margin: 30px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.my-Input{
+    width: 50%;
+    max-width: 400px; /* Adjust as needed */
+    padding: 10px 15px;
+    border: 2px solid #3498db; /* Soft blue border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    color: #333; /* Dark text color */
+    background-color: #f9f9f9; /* Light grey background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: all 0.3s ease;
+}
+
+.my-Input:focus{
+    border-color: #1abc9c; /* Teal border on focus */
+    background-color: #fff; /* White background on focus */
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
+}
+
+.my-Input::placeholder{
+
+    color: #aaa; /* Light grey placeholder text */
+    font-style: italic; /* Italicize placeholder text */
+}
+
+/* Container for the checkbox */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px; /* Increased font size */
+    color: #333;
+}
+
+/* Hide the default checkbox appearance */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Custom checkbox appearance */
+.custom-checkbox .checkmark {
+    display: inline-block;
+    width: 30px; /* Increased width */
+    height: 40px; /* Increased height */
+    background-color: #f9f9f9; /* Light grey background */
+    border: 2px solid #3498db; /* Soft blue border */
+    border-radius: 6px; /* Slightly more rounded corners */
+    margin-right: 15px; /* Increased space between checkbox and label text */
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin: 20px 20px;
+}
+
+/* Checkmark when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #3498db; /* Soft blue background when checked */
+    border-color: #3498db; /* Match border color */
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 9px; /* Adjusted based on new checkmark size */
+    top: 12px; /* Adjusted based on new checkmark size */
+    width: 10px; /* Adjusted size */
+    height: 18px; /* Adjusted size */
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Hover and focus effects */
+.custom-checkbox:hover .checkmark,
+.custom-checkbox input[type="checkbox"]:focus + .checkmark {
+    border-color: #1abc9c; /* Teal border on hover/focus */
+    background-color: #fff; /* White background on hover/focus */
+}
+
+
+
+/* Base button styling */
+.beautiful-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db; /* Soft blue background */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Hover effect */
+.beautiful-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active effect */
+.beautiful-button:active {
+    background-color: #1c6ea4; /* Even darker blue when clicked */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+    transform: translateY(0); /* Remove lift effect */
+}
+
+/* Focus effect */
+.beautiful-button:focus {
+    outline: 3px solid #1abc9c; /* Teal outline on focus */
+    outline-offset: 2px; /* Offset the outline slightly */
+}
+
+
+
+
+/* Container styling */
+.copy-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: flex-start;
+    gap: 10px; /* Space between text and button */
+    margin: 20px;
+    max-width: 100%; /* Ensure container doesn't exceed screen width */
+    padding: 0 10px; /* Add some padding for smaller screens */
+}
+
+/* Text block styling */
+#result {
+    padding: 15px; /* Increased padding for better touch interaction */
+    font-size: 16px; /* Base font size */
+    border: 2px solid #3498db; /* Soft blue border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light grey background */
+    max-width: 100%; /* Ensure text block doesn't exceed container width */
+    word-wrap: break-word; /* Handle long words */
+    text-align: left; /* Align text to the left */
+}
+
+/* Button styling */
+.copy-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db; /* Soft blue background */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Maximum width to prevent excessive stretching */
+}
+
+/* Hover effect */
+.copy-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Active effect */
+.copy-button:active {
+    background-color: #1c6ea4; /* Even darker blue when clicked */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Responsive design adjustments */
+@media (min-width: 600px) {
+    .copy-container {
+        flex-direction: row; /* Align items horizontally on larger screens */
+        align-items: center;
+    }
+
+    #result {
+        font-size: 18px; /* Slightly larger font on bigger screens */
+    }
+
+    .copy-button {
+        width: auto; /* Reset width for larger screens */
+    }
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <input type="number" placeholder="PASSWORD LENGTH" id="inputlength" class="my-Input"> <br>
+
+    
+
+    <label for="lowercase" class="custom-checkbox">
+        <input type="checkbox" name="check" id="lowercase"> <span class="checkmark"></span>
+        ADD lowercase </label>
+
+    <label for="uppercase" class="custom-checkbox">
+
+        <input type="checkbox" name="checks" id="uppercase">
+        <span class="checkmark"></span>
+        
+        ADD UPPERCASE </label>
+    
+   
+
+    <label for="symbols" class="custom-checkbox">
+        <input type="checkbox" name="check" id="symbols">
+
+        <span class="checkmark"></span>
+        
+        ADD Symbols 
+
+        
+
+    </label>
+
+
+   
+    
+    <label for="numbers" class="custom-checkbox">
+        
+        <input type="checkbox" name="check" id="numbers">
+
+        <span class="checkmark"></span>
+
+        ADD Numbers 
+
+        
+    </label>
+
+    <button class="beautiful-button" id="btn">GENERATE</button>
+
+    <div class="copy-container">
+        <p id="result" >
+           
+        </p>
+        <button class="copy-button" onclick="copyText()">Copy Text</button>
+    </div>
+
+
+</div>
+
+   
+
+    
+
+    <script src="app.js">
+
+        
+
+    </script>
+</body>
+</html>
